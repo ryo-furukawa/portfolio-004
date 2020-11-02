@@ -1,0 +1,136 @@
+/* 初期コード */
+
+body {
+  color: #082B48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082B48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/*containerで囲って左右の幅を調整しています*/
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+/* 共通パーツ */
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* header */
+
+.header-title {
+  font-size: 24px;
+}
+
+.nav-title {
+  font-size: 15px;
+}
+
+/* top */
+
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+}
+
+.top-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-subtitle {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* course */
+
+.course {
+  background-color: #e3fcf4;
+}
+
+/* contact */
+
+input[type="email"] {
+  width: 600px;
+  border: 3px solid #d8d8d8;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.contact .btn {
+  padding: 20px 60px;
+  display: inline-block;
+  background-color: #082b48;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.contact .btn-register {
+  background-color: #ec6d64;
+  display: block;
+  margin: auto;
+}
+
+/* footer */
+
+footer {  
+  background-color: #082B48;
+  color: #fff;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.copyright {
+  margin: 0;
+  float: right;
+}
+
+/* スマホレイアウト */
+@media only screen and (max-width:767px) {
+
+input[type="email"] {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 10px;
+  float: none;
+  text-align: center;
+}
+
+}
